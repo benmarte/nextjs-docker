@@ -1,5 +1,27 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Build Docker Image
+
+```
+docker build -t nextjs-in-docker .
+```
+
+## Run Docker Image
+
+We need to pass an environment variable to the docker run command using `-e NEXT_PUBLIC_[VARIABLE_NAME]` where `[VARAIBLE_NAME]` is the name of your variable. You can also use the `--env-file` flag to specify the `.env` file.
+
+Passing environment variables via `-e`:
+
+```
+docker run -p 3000:3000 -e NEXT_PUBLIC_MESSAGE='from docker!' nextjs-in-docker
+```
+
+Passing environment variables via `--env-file`:
+
+```
+docker run -p 3000:3000 --env-file .env.development nextjs-in-docker
+```
+
 ## Getting Started
 
 First, run the development server:
