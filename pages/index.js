@@ -1,15 +1,23 @@
 import Image from 'next/image'
-import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 
+import getConfig from 'next/config';
+
+const {
+  publicRuntimeConfig: { processEnv },
+} = getConfig();
+
 export default function Home() {
+  const { NEXT_PUBLIC_MESSAGE} = processEnv;
+
+  const title = NEXT_PUBLIC_MESSAGE;
+
   return (
     <div className={styles.container}>
 
       <main className={styles.main}>
-        <Header />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js in {title ? title : 'Node'}!</a>
         </h1>
 
         <p className={styles.description}>
