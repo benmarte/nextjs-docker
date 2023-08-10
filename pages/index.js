@@ -1,27 +1,24 @@
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
-import getConfig from 'next/config';
+import getConfig from "next/config";
 
 const {
   publicRuntimeConfig: { processEnv },
 } = getConfig();
 
 export default function Home() {
-  const { NEXT_PUBLIC_MESSAGE} = processEnv;
+  const { NEXT_PUBLIC_MESSAGE } = processEnv;
 
   const title = NEXT_PUBLIC_MESSAGE;
 
   return (
     <div className={styles.container}>
-
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js in {title ? title : 'Node'}!</a>
-        </h1>
+        <h1 className={styles.title}>Welcome to Nextjs in k8s</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -62,12 +59,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }

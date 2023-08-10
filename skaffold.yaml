@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta21
+kind: Config
+
+profiles:
+  - name: dev
+    activation:
+      - command: dev
+    build:
+      artifacts:
+        - image: nextjs-in-docker
+          context: .
+          sync:
+            infer:
+              - "**/*.js"
+              - "**/*.html"
+              - "**/*.css"
+              - "**/*.scss"
