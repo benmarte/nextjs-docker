@@ -10,6 +10,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Run `tilt up`
 - Make changes to the index file to watch changes in near realtime inside the cluster :D
+- Terminate via `tilt down`
+- Delete cluster via `minikube delete`
 
 ## Build Docker Image
 
