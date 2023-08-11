@@ -1,11 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Prerequisites
+
+- Kubernetes: https://kubernetes.io/releases/download/
+- Minikube: https://minikube.sigs.k8s.io/docs/start/
+- Skaffold: https://skaffold.dev/docs/install/#standalone-binary
+
 ## Run with Skaffold
 
-**Prerequisites**
-
-- Install Skaffold: https://skaffold.dev/docs/install/#standalone-binary
-- Install minikube: https://minikube.sigs.k8s.io/docs/start/
 - Run `minikube start`
 - Run `skaffold dev --port-forward`
 
