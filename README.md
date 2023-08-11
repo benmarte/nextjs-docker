@@ -10,6 +10,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Run `minikube start`
 - Run `skaffold dev --port-forward`
+- Terminate via `skaffold delete`
+- Delete cluster via `minikube delete`
 
 ## Build Docker Image
 
