@@ -1,8 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Prerequisites
+
+- Kubernetes: https://kubernetes.io/releases/download/
+- Minikube: https://minikube.sigs.k8s.io/docs/start/
+
 ## Run with tilt
 
-- Install tilt: https://docs.tilt.dev/
+- Tilt: https://docs.tilt.dev/
 - Run `tilt up`
 - Make changes to the index file to watch changes in near realtime inside the cluster :D
 
