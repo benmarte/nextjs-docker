@@ -16,5 +16,8 @@ spec:
       containers:
         - name: nextjs-in-docker
           image: nextjs-in-docker
+          env:
+            - name: NEXT_PUBLIC_MESSAGE
+              value: :)
           ports:
             - containerPort: 3000

@@ -16,7 +16,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to Next.js in Tilt and its still slow :(
+          Welcome to Next.js in Tilt with live sync and env vars support {title}
         </h1>
 
         <p className={styles.description}>

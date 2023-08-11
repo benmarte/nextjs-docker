@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Run with tilt
+
+- Install tilt: https://docs.tilt.dev/
+- Run `tilt up`
+- Make changes to the index file to watch changes in near realtime inside the cluster :D
+
 ## Build Docker Image
 
 ```
