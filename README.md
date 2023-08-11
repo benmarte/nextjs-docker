@@ -54,3 +54,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Developing with k8s and HMR
+
+The [k8](https://github.com/benmarte/nextjs-docker/tree/k8) branch uses [Skaffold](https://skaffold.dev/) to build and deploy the app to a [kubernetes](https://kubernetes.io/) cluster with hot module reload support.
+
+The [tilt](https://github.com/benmarte/nextjs-docker/tree/tilt) branch uses [Tilt](https://tilt.dev/) to build and deploy the app to a [kubernetes](https://kubernetes.io/) cluster with hot module reload support.
+
+Just follow the instructions of the readme in each branch to get it running.
