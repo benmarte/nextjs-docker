@@ -4,10 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Kubernetes: https://kubernetes.io/releases/download/
 - Minikube: https://minikube.sigs.k8s.io/docs/start/
+- Tilt: https://docs.tilt.dev/
 
 ## Run with tilt
 
-- Tilt: https://docs.tilt.dev/
 - Run `tilt up`
 - Make changes to the index file to watch changes in near realtime inside the cluster :D
 
